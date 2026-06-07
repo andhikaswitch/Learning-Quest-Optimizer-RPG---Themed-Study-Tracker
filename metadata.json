@@ -1,0 +1,6 @@
+{
+  "name": "Learning Quest Optimizer",
+  "description": "An RPG-themed study tracker",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #0D0D1A;
+  --card-bg: rgba(22, 33, 62, 0.4);
+  --card-border: rgba(255, 215, 0, 0.15);
+  --card-hover: rgba(255, 215, 0, 0.35);
+  --accent: #FFD700;
+  --accent-glow: rgba(255, 215, 0, 0.1);
+  --int: #FF6B35;
+  --wis: #533483;
+  --str: #39FF14;
+  --dex: #00D4FF;
+  --text-main: #E0E0E0;
+  --text-muted: #8E9299;
+}
+
+body {
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(255, 107, 53, 0.05), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(0, 212, 255, 0.05), transparent 25%);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Base Bento Layout */
+.bento-navbar {
+  @apply fixed top-0 w-full h-16 flex items-center justify-between px-6 z-50;
+  background: rgba(13, 13, 26, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.bento-nav-item {
+  @apply px-4 py-2 rounded-lg text-sm transition-all duration-300 flex items-center space-x-2 border border-transparent whitespace-nowrap;
+  color: var(--text-muted);
+}
+.bento-nav-item:hover {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.05);
+}
+.bento-nav-item.active {
+  background: var(--accent-glow);
+  color: var(--accent);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.05) inset;
+}
+
+.bento-grid {
+  @apply grid gap-5;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(80px, auto); /* Balanced row heights */
+  }
+}
+
+.bento-card {
+  @apply relative rounded-3xl p-6 transition-all duration-500 overflow-hidden shadow-lg;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(16px);
+}
+.bento-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+  pointer-events: none;
+}
+.bento-card:hover {
+  border-color: var(--card-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.05);
+}
+
+.bento-card-title {
+  @apply text-xs font-black uppercase tracking-[0.1em] mb-4;
+  color: var(--text-muted);
+}
+
+.bento-stat-card {
+  @apply flex flex-col justify-between;
+}
+.bento-stat-big {
+  @apply text-[3rem] font-extrabold leading-none tracking-tighter drop-shadow-md;
+}
+.bento-stat-label {
+  @apply text-sm opacity-80 mt-1 font-medium;
+}
+
+.bento-progress-container {
+  @apply h-2 w-full bg-black/50 rounded-full overflow-hidden mt-1 shadow-inner;
+}
+.bento-progress-fill {
+  @apply h-full rounded-full transition-all duration-1000 ease-out;
+  box-shadow: 0 0 10px currentColor; /* Glow effect */
+}
+
+.bento-badge-grid {
+  @apply grid gap-4;
+}
+.bento-badge-item {
+  @apply relative aspect-[4/3] rounded-2xl border flex flex-col items-center justify-center transition-all bg-black/20 overflow-hidden cursor-default;
+}
+.bento-badge-item.unlocked {
+  @apply bg-gradient-to-br from-[var(--card-bg)] to-black/60 shadow-[0_0_20px_rgba(255,215,0,0.05)_inset];
+}
+.bento-badge-item.unlocked:hover {
+  @apply scale-105 z-10 shadow-[0_10px_30px_rgba(0,0,0,0.5)];
+  border-color: currentColor !important;
+}
+.bento-badge-item.locked {
+  @apply opacity-30 grayscale border-white/5;
+}
+
+.bento-input {
+  @apply w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none transition-all duration-300;
+}
+.bento-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.15) inset;
+  background: black/40;
+}
+
+.bento-btn {
+  @apply w-full font-extrabold bg-[var(--accent)] text-black py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2), inset 0 -2px 0 rgba(0,0,0,0.2);
+}
+.bento-btn:hover {
+  @apply bg-[#E6C200] -translate-y-1;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3), inset 0 -2px 0 rgba(0,0,0,0.2);
+}
+.bento-btn:active {
+  @apply translate-y-0 opacity-90;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Hide scrollbar for nav & general */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
