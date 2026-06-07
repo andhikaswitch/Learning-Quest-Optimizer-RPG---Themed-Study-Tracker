@@ -29,8 +29,8 @@ Buka aplikasi di browser (biasanya http://localhost:5173).
 
 **Screenshot:**
 
-- Tampilan utama: ![Tampilan Utama](src/img/screenshot-1.svg)
-- Form tambah quest: ![Form Quest](src/img/screenshot-2.svg)
+- Tampilan utama: ![Tampilan Utama](src/img/1.png)
+- Form tambah quest: ![Form Quest](src/img/2.png)
 
 **Struktur Proyek Singkat:**
 - **src/**: kode sumber React
@@ -39,7 +39,7 @@ Buka aplikasi di browser (biasanya http://localhost:5173).
 
 **Menggantikan Screenshot dengan SS Asli:**
 - Ambil screenshot dari browser setelah menjalankan aplikasi.
-- Simpan file ke `src/img/` dengan nama `screenshot-1.svg` atau `screenshot-2.svg` (atau ganti ekstensi ke .png).
+- Simpan file ke `src/img/` dengan nama `1.png` atau `2.png`.
 
 **Kontribusi:**
 - Ingin membantu? Buka issue atau kirim PR. Ikuti gaya kode dan tambahkan test sederhana.
