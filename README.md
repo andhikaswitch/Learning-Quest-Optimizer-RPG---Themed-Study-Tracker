@@ -5,6 +5,8 @@ Sebuah aplikasi web interaktif untuk merencanakan dan mengoptimalkan perjalanan 
 **Ringkasan Proyek:**
 - **Tujuan:** Membantu pelajar membuat rencana belajar bertahap (quest) yang terukur dan adaptif.
 - **Stack:** Vite + React + CSS, proyek ringan untuk demonstrasi UX dan logika penjadwalan.
+ - **Stack:** Vite + React + CSS, proyek ringan untuk demonstrasi UX dan logika penjadwalan.
+ - **Bahasa & Teknologi:** JavaScript (ES6+), React (JSX), HTML5, CSS3, Node.js/npm, Vite
 
 **Fitur Utama:**
 - **Quest Builder:** Buat dan susun tugas belajar bertingkat.
@@ -25,7 +27,7 @@ npm install
 npm run dev
 ```
 
-Buka aplikasi di browser (biasanya http://localhost:5173).
+Buka aplikasi di browser (biasanya http://localhost:3000/).
 
 **Screenshot:**
 
@@ -48,4 +50,4 @@ Buka aplikasi di browser (biasanya http://localhost:5173).
 - MIT — bebas digunakan dan dimodifikasi.
 
 **Kontak:**
-- Pembuat: Learning Quest Optimizer team
+- Pembuat: andhikaswitch
