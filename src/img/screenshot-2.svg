@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
+  <rect width="100%" height="100%" fill="#04263a"/>
+  <rect x="30" y="30" width="840" height="540" rx="10" fill="#051825" stroke="#0b3a55"/>
+  <text x="60" y="110" fill="#fff" font-size="34" font-family="Arial, Helvetica, sans-serif">Tambah Quest</text>
+  <rect x="60" y="150" width="760" height="60" rx="6" fill="#071a2a" stroke="#163a4f"/>
+  <text x="80" y="190" fill="#9cc3ff" font-size="16">Judul quest</text>
+  <rect x="60" y="230" width="760" height="200" rx="6" fill="#071a2a" stroke="#163a4f"/>
+  <text x="80" y="260" fill="#9cc3ff" font-size="16">Deskripsi singkat — langkah-langkah dan estimasi waktu</text>
+  <text x="60" y="500" fill="#cbd5e1" font-size="12">(Ganti gambar ini dengan screenshot asli: simpan ke src/img/screenshot-2.svg)</text>
+</svg>

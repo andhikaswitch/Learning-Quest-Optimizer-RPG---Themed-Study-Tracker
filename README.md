@@ -1,20 +1,51 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+**Learning Quest Optimizer**
 
-# Run and deploy your AI Studio app
+Sebuah aplikasi web interaktif untuk merencanakan dan mengoptimalkan perjalanan belajar melalui "quests" yang terstruktur dan menyenangkan.
 
-This contains everything you need to run your app locally.
+**Ringkasan Proyek:**
+- **Tujuan:** Membantu pelajar membuat rencana belajar bertahap (quest) yang terukur dan adaptif.
+- **Stack:** Vite + React + CSS, proyek ringan untuk demonstrasi UX dan logika penjadwalan.
 
-View your app in AI Studio: https://ai.studio/apps/9c0cec2e-3a44-48f1-abb4-d2353de5e33f
+**Fitur Utama:**
+- **Quest Builder:** Buat dan susun tugas belajar bertingkat.
+- **Progress Tracker:** Lihat progres harian/weekly secara visual.
+- **Rekomendasi:** Saran langkah berikutnya berdasarkan performa.
 
-## Run Locally
+**Cara Menjalankan (lokal):**
 
-**Prerequisites:**  Node.js
+1. Install dependensi:
 
+```
+npm install
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. Jalankan dev server:
+
+```
+npm run dev
+```
+
+Buka aplikasi di browser (biasanya http://localhost:5173).
+
+**Screenshot:**
+
+- Tampilan utama: ![Tampilan Utama](src/img/screenshot-1.svg)
+- Form tambah quest: ![Form Quest](src/img/screenshot-2.svg)
+
+**Struktur Proyek Singkat:**
+- **src/**: kode sumber React
+- **src/img/**: assets gambar dan screenshot
+- **index.html**: entry point
+
+**Menggantikan Screenshot dengan SS Asli:**
+- Ambil screenshot dari browser setelah menjalankan aplikasi.
+- Simpan file ke `src/img/` dengan nama `screenshot-1.svg` atau `screenshot-2.svg` (atau ganti ekstensi ke .png).
+
+**Kontribusi:**
+- Ingin membantu? Buka issue atau kirim PR. Ikuti gaya kode dan tambahkan test sederhana.
+
+**Lisensi:**
+- MIT — bebas digunakan dan dimodifikasi.
+
+**Kontak:**
+- Pembuat: Learning Quest Optimizer team

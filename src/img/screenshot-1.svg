@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <rect x="40" y="40" width="1120" height="595" rx="12" fill="#0b1220" stroke="#1f2937"/>
+  <text x="80" y="120" fill="#fff" font-size="42" font-family="Arial, Helvetica, sans-serif">Learning Quest Optimizer</text>
+  <text x="80" y="180" fill="#9ca3af" font-size="20">Tampilan utama — dashboard progres dan rekomendasi langkah berikutnya.</text>
+  <rect x="80" y="230" width="320" height="160" rx="8" fill="#0b1220" stroke="#334155"/>
+  <text x="100" y="270" fill="#60a5fa" font-size="18">Progress</text>
+  <rect x="420" y="230" width="640" height="160" rx="8" fill="#0b1220" stroke="#334155"/>
+  <text x="440" y="270" fill="#7dd3fc" font-size="18">Rekomendasi Quest</text>
+  <text x="80" y="520" fill="#cbd5e1" font-size="14">(Ganti gambar ini dengan screenshot asli: simpan ke src/img/screenshot-1.svg)</text>
+</svg>
