@@ -1,10 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
-  <rect width="100%" height="100%" fill="#04263a"/>
-  <rect x="30" y="30" width="840" height="540" rx="10" fill="#051825" stroke="#0b3a55"/>
-  <text x="60" y="110" fill="#fff" font-size="34" font-family="Arial, Helvetica, sans-serif">Tambah Quest</text>
-  <rect x="60" y="150" width="760" height="60" rx="6" fill="#071a2a" stroke="#163a4f"/>
-  <text x="80" y="190" fill="#9cc3ff" font-size="16">Judul quest</text>
-  <rect x="60" y="230" width="760" height="200" rx="6" fill="#071a2a" stroke="#163a4f"/>
-  <text x="80" y="260" fill="#9cc3ff" font-size="16">Deskripsi singkat — langkah-langkah dan estimasi waktu</text>
-  <text x="60" y="500" fill="#cbd5e1" font-size="12">(Ganti gambar ini dengan screenshot asli: simpan ke src/img/screenshot-2.svg)</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="formBg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#053047"/>
+      <stop offset="100%" stop-color="#04293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#formBg)"/>
+  <g transform="translate(40,40)">
+    <rect width="820" height="520" rx="12" fill="#061822" stroke="#0f3b52"/>
+    <text x="40" y="64" fill="#fff" font-size="32" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="700">Tambah Quest</text>
+    <text x="40" y="94" fill="#9fb4c9" font-size="14">Buat langkah baru, atur estimasi, dan simpan ke rencana belajarmu</text>
+
+    <!-- Form fields -->
+    <g transform="translate(40,130)">
+      <label x="0" y="0" />
+      <rect x="0" y="0" width="740" height="56" rx="8" fill="#04202a" stroke="#144b66"/>
+      <text x="20" y="36" fill="#cfe9ff" font-size="16">Judul quest</text>
+
+      <rect x="0" y="80" width="740" height="140" rx="8" fill="#04202a" stroke="#144b66"/>
+      <text x="20" y="110" fill="#cfe9ff" font-size="16">Deskripsi singkat — langkah-langkah dan estimasi waktu</text>
+
+      <g transform="translate(0,240)">
+        <rect x="0" y="0" width="220" height="48" rx="8" fill="#04202a" stroke="#144b66"/>
+        <text x="18" y="32" fill="#cfe9ff" font-size="14">Estimasi (jam)</text>
+
+        <rect x="240" y="0" width="220" height="48" rx="8" fill="#04202a" stroke="#144b66"/>
+        <text x="258" y="32" fill="#cfe9ff" font-size="14">Level</text>
+
+        <rect x="480" y="0" width="260" height="48" rx="8" fill="#0b4f6c"/>
+        <text x="620" y="32" fill="#e6fbff" font-size="14" text-anchor="middle">Simpan Quest</text>
+      </g>
+
+      <!-- Tips box -->
+      <rect x="0" y="310" width="740" height="80" rx="8" fill="#03202a" stroke="#0e4b62"/>
+      <text x="20" y="344" fill="#9fb4c9" font-size="13">Tip: Bagi quest besar menjadi beberapa sub-quest singkat agar konsisten.</text>
+    </g>
+
+    <text x="40" y="500" fill="#9fb4c9" font-size="12">(Ganti gambar ini dengan screenshot asli: simpan ke src/img/screenshot-2.svg)</text>
+  </g>
 </svg>
