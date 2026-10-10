@@ -53,8 +53,5 @@ Dengan sistem ini, belajar menjadi lebih menyenangkan dan terukur — setiap pro
 **Kontribusi:**
 - Ingin membantu? Buka issue atau kirim PR. Ikuti gaya kode dan tambahkan test sederhana.
 
-**Lisensi:**
-- MIT — bebas digunakan dan dimodifikasi.
-
 **Kontak:**
 - Pembuat: andhikaswitch
